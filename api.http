@@ -1,0 +1,13 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Unite Summit",
+    "details": "Um evento para reunir a comunidade de tecnologia",
+    "maximumAttendees": 100
+}
+
+
+GET http://localhost:3333/events
+
+GET http://localhost:3333/events/nlw-unite
