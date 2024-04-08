@@ -50,6 +50,10 @@ npm i fastify (microframework p/ http requests, ex: Express.js, Koa JS)
 npm i prisma (orm p/ banco)
 npm i zod
 npm i fastify-type-provider-zod
+npm i @fastify/swagger
+npm i @fastify/swagger-ui
+npm i @fastify/cors
+npm i tsup -D (ts para js - build da aplicacao)
 
 npx tsc --init (cria tsconfig.json)
 npx tsc (converte typescript para js)
@@ -58,7 +62,7 @@ npx tsx watch src/server.ts (converte e executa sem parar)
 npx prisma init --datasource-provider SQLite
 npx prisma migrate dev (cria migracao com alteracoes)
 npx prisma studio (app para gerenciar db)
-
+npx prisma db seed (popula o bd)
 
 ## Deploy
 Para subir a aplicação, executar:
