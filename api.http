@@ -2,12 +2,25 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "Unite Summit",
+    "title": "Evento apenas 1 participante",
     "details": "Um evento para reunir a comunidade de tecnologia",
-    "maximumAttendees": 100
+    "maximumAttendees": 1
 }
 
+###
 
-GET http://localhost:3333/events
+POST http://localhost:3333/events/591e5ef1-8143-4baa-8400-2badfabe8d14/attendees
+Content-Type: application/json
 
-GET http://localhost:3333/events/nlw-unite
+{
+    "name": "Gustavo de Jesus",
+    "email": "gutors@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/591e5ef1-8143-4baa-8400-2badfabe8d14
+
+###
+
+GET http://localhost:3333/attendees/3/badge

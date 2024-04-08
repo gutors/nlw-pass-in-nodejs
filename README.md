@@ -48,6 +48,8 @@ npm i typescript @types/node -D (suporte a typescript)
 npm i tsx -D (tsx = typescript execute)
 npm i fastify (microframework p/ http requests, ex: Express.js, Koa JS)
 npm i prisma (orm p/ banco)
+npm i zod
+npm i fastify-type-provider-zod
 
 npx tsc --init (cria tsconfig.json)
 npx tsc (converte typescript para js)
@@ -110,3 +112,18 @@ CREATE UNIQUE INDEX "check_ins_attendeeId_key" ON "check_ins"("attendeeId");
 Como possíveis expansões do projeto, fica as seguintes sugestões:
 
 - Substituir o node.js por deno ou bun;
+- Utilizar nanoid para acessar dados dos parcitipantes
+
+## Anotações
+SOAP, REST, GraphQL, gRPC
+GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS, ...
+
+Tipos de conexao ao banco de dados
+Driver nativo (conecta e monta as querys - batchs)
+Query Builder (knex.js)
+ORM (Prisma, Sequelize, drizzle, TypeORM)
+
+20x - Sucesso
+30x - Redirecionamento
+40x - Cliente errou
+50x - Servidor errou
